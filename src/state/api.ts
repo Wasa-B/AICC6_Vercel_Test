@@ -121,7 +121,7 @@ export const api = createApi({
       ],
     }),
     search: build.query<SearchResult, string>({
-      query: (query)=> `search?query?=${query}`,
+      query: (query)=> `search?query=${query}`,
     }),
   }),
 });
